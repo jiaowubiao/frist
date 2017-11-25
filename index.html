@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>婚纱网站</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+    <link rel="stylesheet" href="css/自适应-css.css" type="text/css"> 
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/vendor/jquery.js"></script>
+    <script type="text/javascript" src="js/vendor/superslide.2.1.js"></script>
+    <script>
+     document.onreadystatechange=function(){
+		 if(document.readyState=="complete"){
+			 $(".loading").fadeOut();
+			 }
+		 }
+    </script>
+    
+</head>
+<body>
+<!--[if lte IE8]>
+<p class="browserupgrade">您的浏览器版太低了 请到<a href="http://browsehappy.com/">这里</a>更新 以获取最佳体验</p>
+<![endif]-->
+<!--loading加载-->
+  <div class="loading">
+    <div class="pic">
+       <i></i>
+       <i></i>
+       <i></i>
+       <i></i>
+       <i></i>
+    </div>
+  </div>
+<!--页头-->
+<header>
+	<div class="header-top">
+	<div class="nav-top clearfix">
+		<ul class="nav-top-left">
+			<li><a href="">中文站</a>
+			</li>|<li><a href="">ENLISH</a>
+			</li>|<li>热线电话</li>
+		</ul>
+		<a class="nav-top-right" href="#">微信公众号</a>
+	</div>
+	</div>
+	<div class="header-nav">
+		<nav>
+		<ul class="clearfix">
+			<li class="nav-li"><a href="" class="nav-li_a">首页</a>
+				<ul class="submenu" style="display: none;">
+					<li><a href="">公司简介</a></li>
+					<li><a href="">公司优势</a></li>
+					<li><a href="">公司文化</a></li>
+					<li><a href="">联系我们</a></li>			
+			</ul></li><li><a href="" class="nav-li_a">关于我们</a>
+				<ul class="submenu">
+					<li><a href="">公司简介</a></li>
+					<li><a href="">公司优势</a></li>
+					<li><a href="">公司文化</a></li>
+					<li><a href="">联系我们</a></li>						
+				</ul></li><li><a href="婚宴场馆.html" class="nav-li_a">婚宴场馆</a>
+				 <ul class="submenu">
+				   <li><a href="">宝安店</a></li>
+					<li><a href="">龙华店</a></li>
+					<li><a href="">南山店</a></li>
+					<li><a href="">龙岗店</a></li>
+					<li><a href="">福田店</a></li>
+					<li><a href="">罗湖店</a></li>							
+			</ul></li><li><a href="客户案例.html" class="nav-li_a">客户案例</a>
+				 <ul class="submenu">
+				    <li><a href="">公司简介</a></li>
+					<li><a href="">公司优势</a></li>
+					<li><a href="">公司文化</a></li>
+					<li><a href="">联系我们</a></li>
+					<li><a href="">罗湖店</a></li>
+					<li><a href="">罗湖店</a></li>												
+				</ul></li><li><a href="服务团队.html" class="nav-li_a">服务团队</a>
+					<ul class="submenu">
+				    <li><a href="">公司简介</a></li>
+					<li><a href="">公司优势</a></li>
+					<li><a href="">公司文化</a></li>
+					<li><a href="">联系我们</a></li>
+					<li><a href="">罗湖店</a></li>
+					<li><a href="">罗湖店</a></li>												
+			</ul></li><li><a href="" class="nav-li_a">热门活动</a>
+				<ul class="submenu">
+				    <li><a href="">公司简介</a></li>
+					<li><a href="">公司优势</a></li>
+					<li><a href="">公司文化</a></li>
+					<li><a href="">联系我们</a></li>
+					<li><a href="">罗湖店</a></li>
+					<li><a href="">罗湖店</a></li>							
+			</ul></li>
+		</ul>
+	</nav>
+	</div>
+ <!--banner-->
+ <!--<div class="banner">
+ 	<ul>
+ 		<li><a href=""><img src="img/banner1.png"></a></li>
+ 		<li><a href=""><img src="img/banner2.png"></a></li>
+ 		<li><a href=""><img src="img/banner3.png"></a></li>
+ 	</ul>
+ 	<a class="banner-btn-left">&gt;</a>
+ 	<a class="banner-btn-right">&ang;</a>
+ 	<div class="banner-btn">
+ 		<span class="active-banner-btn">1
+ 		</span><span >2
+ 		</span><span >3
+ 	</div>
+ </div>-->
+</header>
+<!--自适应--banner-->
+
+<div class="fullSlide">
+	<div class="bd">
+		<ul>
+			<li _src="url(img/1.jpg)" style="background:#E2025E center 0 no-repeat;"><a href="#"></a></li>
+			<li _src="url(img/2.jpg)" style="background:#DED5A1 center 0 no-repeat;"><a href="#"></a></li>
+			<li _src="url(img/3.jpg)" style="background:#B8CED1 center 0 no-repeat;"><a href="#"></a></li>
+			
+		</ul>
+	</div>
+	<div class="hd"><ul></ul></div>
+	<span class="prev"></span>
+	<span class="next"></span>
+</div><!--fullSlide end-->
+
+<script type="text/javascript">
+$(".fullSlide").hover(function(){
+    $(this).find(".prev,.next").stop(true, true).fadeTo("show", 0.5)
+},
+function(){
+    $(this).find(".prev,.next").fadeOut()
+});
+$(".fullSlide").slide({
+    titCell: ".hd ul",
+    mainCell: ".bd ul",
+    effect: "fold",
+    autoPlay: true,
+    autoPage: true,
+    trigger: "click",
+    startFun: function(i) {
+        var curLi = jQuery(".fullSlide .bd li").eq(i);
+        if ( !! curLi.attr("_src")) {
+            curLi.css("background-image", curLi.attr("_src")).removeAttr("_src")
+        }
+    }
+});
+</script>
+
+<!--content-->
+<section style="color:white;">
+  <div class="containa">
+	<div class="conent-1">
+		<ul>
+			<li>
+			<div class="conent-1-top">
+			  <span class="product-bg-left"><img src="img/product-bg-left.png"></span>
+			  <img src="img/product-bg-灯光效果.png" class="conent-1-top-img" id="conent-1-top-img">
+			  <img src="img/product-bg-灯光效果-黄色.png" class="conent-1-top-img-a" style="display: none;">
+			   <span class="product-bg-right"><img src="img/product-bg-right.png"></span>
+			</div>
+			<div class="conent-1-posi" style="display: block;">
+			   <div class="conent-1-posi-left"></div>
+			   <div class="conent-1-posi-center">
+			         <h2>1600$</h2>
+			         <span class="_span1">法国Heil 皇家豪华婚礼服</span>
+			         <span class="_span2"></span>
+			         <a>抢定</a>
+			   </div>
+			   <div class="conent-1-posi-right"></div>
+			   <div class="conent-1-posi-go"></div>
+			   <a class="conent-1-posi-go-a">go</a>
+			</div>
+			
+			
+			</li><li>
+			<div class="conent-1-top">
+			  <span class="product-bg-left"><img src="img/product-bg-left.png"></span>
+			  <img src="img/product-bg-灯光效果.png" class="conent-1-top-img" id="conent-1-top-img">
+			  <img src="img/product-bg-灯光效果-黄色.png" class="conent-1-top-img-a" style="display: none;">
+			   <span class="product-bg-right"><img src="img/product-bg-right.png"></span>
+			</div>
+			<div class="conent-1-posi">
+			   <div class="conent-1-posi-left"></div>
+			   <div class="conent-1-posi-center">
+			         <h2>1600$</h2>
+			         <span class="_span1">法国Heil 皇家豪华婚礼服</span>
+			         <span class="_span2"></span>
+			         <a>抢定</a>
+			   </div>
+			   <div class="conent-1-posi-right"></div>
+			   <div class="conent-1-posi-go"></div>
+			   <a class="conent-1-posi-go-a">go</a>
+			</div>
+			
+			
+			</li><li>
+			<div class="conent-1-top">
+			  <span class="product-bg-left"><img src="img/product-bg-left.png"></span>
+			  <img src="img/product-bg-灯光效果.png" class="conent-1-top-img" id="conent-1-top-img">
+			  <img src="img/product-bg-灯光效果-黄色.png" class="conent-1-top-img-a" style="display: none;">
+			   <span class="product-bg-right"><img src="img/product-bg-right.png"></span>
+			</div>
+			<div class="conent-1-posi" style="display: block;">
+			   <div class="conent-1-posi-left"></div>
+			   <div class="conent-1-posi-center">
+			         <h2>1600$</h2>
+			         <span class="_span1">法国Heil 皇家豪华婚礼服</span>
+			         <span class="_span2"></span>
+			         <a>抢定</a>
+			   </div>
+			   <div class="conent-1-posi-right"></div>
+			   <div class="conent-1-posi-go"></div>
+			   <a class="conent-1-posi-go-a">go</a>
+			</div>
+			
+				
+			</li><li>
+			<div class="conent-1-top">
+			  <span class="product-bg-left"><img src="img/product-bg-left.png"></span>
+			  <img src="img/product-bg-灯光效果.png" class="conent-1-top-img" id="conent-1-top-img">
+			  <img src="img/product-bg-灯光效果-黄色.png" class="conent-1-top-img-a" style="display: none;">
+			   <span class="product-bg-right"><img src="img/product-bg-right.png"></span>
+			</div>
+			<div class="conent-1-posi" style="display: block;">
+			   <div class="conent-1-posi-left"></div>
+			   <div class="conent-1-posi-center">
+			         <h2>1600$</h2>
+			         <span class="_span1">法国Heil 皇家豪华婚礼服</span>
+			         <span class="_span2"></span>
+			         <a>抢定</a>
+			   </div>
+			   <div class="conent-1-posi-right"></div>
+			   <div class="conent-1-posi-go"></div>
+			   <a class="conent-1-posi-go-a">go</a>
+			</div>
+			
+			</li>	
+		</ul>
+	</div>
+	<!--预约-->
+  <div class="yuyue-box">
+  	<ul>
+  		<li><input type="text" value="姓名">
+  		</li><li><input type="text" value="手机">
+  		</li><li><input type="button" value="高级定制系列抢定"></li>
+  	</ul>
+  </div>
+  
+	<div class="content-2">
+		<div class="content-2-top">
+			<img src="img/yan_huan1.jpg">
+			<a>婚宴场馆</a>
+			<span>各式各样的婚宴场馆满足多种需求</span>
+		</div>
+		<div class="content-2-bottom clearfix">
+			<a href="#" class="clearfix">
+				<div class="content-div1 pr_divleft">
+					<div class="content_pro">
+					<span>宝安店</span>
+					<p class="pro_p1">金典Tiffany蓝色主题配色/独特镜面雪花镂空吊顶</p>
+					<p class="pro_p2">位于宝安区黄金地段/独栋纯白欧式会馆建筑</p>
+					<span class="pro_span1">查看更多</span>					
+					</div>
+				</div>
+				
+				<div class="content-div1 pr_div1">
+					<div class="content_pro">
+					<span>宝安店</span>
+					<p class="pro_p1">金典Tiffany蓝色主题配色/独特镜面雪花镂空吊顶</p>
+					<p class="pro_p2">位于宝安区黄金地段/独栋纯白欧式会馆建筑</p>
+					<span class="pro_span1">查看更多</span>					
+					 </div>
+				</div>
+				
+				<div class="content-div2">
+					<span>01</span>
+					<img src="img/yuan_01.png">
+				</div>			
+			</a><a href="#">
+				<div class="content-div1 pr_divleft">
+					<div class="content_pro">
+					<span>宝安店</span>
+					<p class="pro_p1">金典Tiffany蓝色主题配色/独特镜面雪花镂空吊顶</p>
+					<p class="pro_p2">位于宝安区黄金地段/独栋纯白欧式会馆建筑</p>
+					<span class="pro_span1">查看更多</span>					
+					</div>
+				</div>
+				
+				<div class="content-div1 pr_div1">
+					<div class="content_pro">
+					<span>宝安店</span>
+					<p class="pro_p1">金典Tiffany蓝色主题配色/独特镜面雪花镂空吊顶</p>
+					<p class="pro_p2">位于宝安区黄金地段/独栋纯白欧式会馆建筑</p>
+					<span class="pro_span1">查看更多</span>					
+					 </div>
+				</div>
+				
+				<div class="content-div2">
+					<span>01</span>
+					<img src="img/yuan_01.png">
+				</div>
+			
+			</a><a href="#">
+				<div class="content-div1 pr_divleft">
+					<div class="content_pro">
+					<span>宝安店</span>
+					<p class="pro_p1">金典Tiffany蓝色主题配色/独特镜面雪花镂空吊顶</p>
+					<p class="pro_p2">位于宝安区黄金地段/独栋纯白欧式会馆建筑</p>
+					<span class="pro_span1">查看更多</span>					
+					</div>
+				</div>
+				
+				<div class="content-div1 pr_div1">
+					<div class="content_pro">
+					<span>宝安店</span>
+					<p class="pro_p1">金典Tiffany蓝色主题配色/独特镜面雪花镂空吊顶</p>
+					<p class="pro_p2">位于宝安区黄金地段/独栋纯白欧式会馆建筑</p>
+					<span class="pro_span1">查看更多</span>					
+					 </div>
+				</div>
+				
+				<div class="content-div2">
+					<span>01</span>
+					<img src="img/yuan_01.png">
+				</div>
+			</a><a href="#">
+				<div class="content-div1 pr_divleft">
+					<div class="content_pro">
+					<span>宝安店</span>
+					<p class="pro_p1">金典Tiffany蓝色主题配色/独特镜面雪花镂空吊顶</p>
+					<p class="pro_p2">位于宝安区黄金地段/独栋纯白欧式会馆建筑</p>
+					<span class="pro_span1">查看更多</span>					
+					</div>
+				</div>
+				
+				<div class="content-div1 pr_div1">
+					<div class="content_pro">
+					<span>宝安店</span>
+					<p class="pro_p1">金典Tiffany蓝色主题配色/独特镜面雪花镂空吊顶</p>
+					<p class="pro_p2">位于宝安区黄金地段/独栋纯白欧式会馆建筑</p>
+					<span class="pro_span1">查看更多</span>					
+					 </div>
+				</div>
+				
+				<div class="content-div2">
+					<span>01</span>
+					<img src="img/yuan_01.png">
+				</div>			
+			</a><a href="#">
+				<div class="content-div1 pr_divleft">
+					<div class="content_pro">
+					<span>宝安店</span>
+					<p class="pro_p1">金典Tiffany蓝色主题配色/独特镜面雪花镂空吊顶</p>
+					<p class="pro_p2">位于宝安区黄金地段/独栋纯白欧式会馆建筑</p>
+					<span class="pro_span1">查看更多</span>					
+					</div>
+				</div>
+				
+				<div class="content-div1 pr_div1">
+					<div class="content_pro">
+					<span>宝安店</span>
+					<p class="pro_p1">金典Tiffany蓝色主题配色/独特镜面雪花镂空吊顶</p>
+					<p class="pro_p2">位于宝安区黄金地段/独栋纯白欧式会馆建筑</p>
+					<span class="pro_span1">查看更多</span>					
+					 </div>
+				</div>
+				
+				<div class="content-div2">
+					<span>01</span>
+					<img src="img/yuan_01.png">
+				</div>			
+			</a><a href="#">
+				<div class="content-div1 pr_divleft">
+					<div class="content_pro">
+					<span>宝安店</span>
+					<p class="pro_p1">金典Tiffany蓝色主题配色/独特镜面雪花镂空吊顶</p>
+					<p class="pro_p2">位于宝安区黄金地段/独栋纯白欧式会馆建筑</p>
+					<span class="pro_span1">查看更多</span>					
+					</div>
+				</div>				
+				<div class="content-div1 pr_div1">
+					<div class="content_pro">
+					<span>宝安店</span>
+					<p class="pro_p1">金典Tiffany蓝色主题配色/独特镜面雪花镂空吊顶</p>
+					<p class="pro_p2">位于宝安区黄金地段/独栋纯白欧式会馆建筑</p>
+					<span class="pro_span1">查看更多</span>					
+					 </div>
+				</div>
+				
+				<div class="content-div2">
+					<span>01</span>
+					<img src="img/yuan_01.png">
+				</div>
+			</a>
+			
+		</div>
+	</div>
+  </div>
+  
+  <!--案例-->
+  <div class="content-3">
+  	<div class="content-3-box">
+  		<div class="content-3-bt">
+  			<span>WE HAVE BEEN WORKING ON</span>
+  			<span>客户案例</span>
+  			<span>CUSTOMER CASE</span>
+  		</div>
+  		<div class="content-3-content clearfix">
+  			<div>
+  				<span>01</span>
+  				<h3>草坪婚礼</h3>
+  			
+  			</div><div>
+  				<span>02</span>
+  				<h3>草坪婚礼</h3>
+  			
+  			</div><div>
+  				<span>03</span>
+  				<h3>草坪婚礼</h3>
+  			
+  			</div><div>
+  				<span>04</span>
+  				<h3>草坪婚礼</h3>
+  			
+  			</div><div>
+  				<span>05</span>
+  				<h3>草坪婚礼</h3> 			
+  			</div><div>
+  				
+  				<span>06</span>
+  				<h3>草坪婚礼</h3>
+  			</div>
+  		</div>
+  		<div class="content-3-img clearfix">
+  			<div><img src="img/case1.jpg">
+  			</div><div><img src="img/case1.jpg">
+  			</div><div><img src="img/case1.jpg"></div>
+  		</div>
+  	</div>
+  </div>
+  <!--content-4-->
+  <div class="content-4">
+  	<div class="content-4-bt">
+  		<span>WE HAVE BEEN WORKING ON</span>
+  		<h3>服务团队</h3>
+  		<h3 style="color:#222222;">SERVICE TEAM</h3>
+  	</div>
+  	<div class="content-4-box clearfix">
+  		<a>
+  		<div class="content-4-box-list1">
+  			<h3>摄影师 <span>焦武彪</span></h3>
+  			<p>从事摄影行业5年，期间在大型婚纱公司担任摄影指导工作，拥有丰富的摄影经验和摄影技术</p>
+  			<span>善于拍摄 《客照》《写真集》....</span>
+  		</div>
+  		<div class="content-4-box-list2"></div>
+  		
+  		</a><a>
+  			<div class="content-4-box-list1">
+  			<h3>摄影师 <span>焦武彪</span></h3>
+  			<p>从事摄影行业5年，期间在大型婚纱公司担任摄影指导工作，拥有丰富的摄影经验和摄影技术</p>
+  			<span>善于拍摄 《客照》《写真集》....</span>
+  		</div>
+  		<div class="content-4-box-list2"></div>
+  		</a><a>
+  			<div class="content-4-box-list1">
+  			<h3>摄影师 <span>焦武彪</span></h3>
+  			<p>从事摄影行业5年，期间在大型婚纱公司担任摄影指导工作，拥有丰富的摄影经验和摄影技术</p>
+  			<span>善于拍摄 《客照》《写真集》....</span>
+  		</div>
+  		<div class="content-4-box-list2"></div>
+  		</a><a>
+  			<div class="content-4-box-list1">
+  			<h3>摄影师 <span>焦武彪</span></h3>
+  			<p>从事摄影行业5年，期间在大型婚纱公司担任摄影指导工作，拥有丰富的摄影经验和摄影技术</p>
+  			<span>善于拍摄 《客照》《写真集》....</span>
+  		</div>
+  		<div class="content-4-box-list2"></div>
+  		</a>
+  		
+  	</div>
+  	
+  	<div class="content-4-box clearfix" style="margin-top:2px;">
+  		<a>
+  		<div class="content-4-box-list1">
+  			<h3>摄影师 <span>焦武彪</span></h3>
+  			<p>从事摄影行业5年，期间在大型婚纱公司担任摄影指导工作，拥有丰富的摄影经验和摄影技术</p>
+  			<span>善于拍摄 《客照》《写真集》....</span>
+  		</div>
+  		<div class="content-4-box-list2"></div>
+  		
+  		</a><a>
+  			<div class="content-4-box-list1">
+  			<h3>摄影师 <span>焦武彪</span></h3>
+  			<p>从事摄影行业5年，期间在大型婚纱公司担任摄影指导工作，拥有丰富的摄影经验和摄影技术</p>
+  			<span>善于拍摄 《客照》《写真集》....</span>
+  		</div>
+  		<div class="content-4-box-list2"></div>
+  		</a><a>
+  			<div class="content-4-box-list1">
+  			<h3>摄影师 <span>焦武彪</span></h3>
+  			<p>从事摄影行业5年，期间在大型婚纱公司担任摄影指导工作，拥有丰富的摄影经验和摄影技术</p>
+  			<span>善于拍摄 《客照》《写真集》....</span>
+  		</div>
+  		<div class="content-4-box-list2"></div>
+  		</a><a>
+  			<div class="content-4-box-list1">
+  			<h3>摄影师 <span>焦武彪</span></h3>
+  			<p>从事摄影行业5年，期间在大型婚纱公司担任摄影指导工作，拥有丰富的摄影经验和摄影技术</p>
+  			<span>善于拍摄 《客照》《写真集》....</span>
+  		</div>
+  		<div class="content-4-box-list2"></div>
+  		</a>
+  		
+  	</div>
+  </div>
+  
+  <div class="content-5">
+  	<div class="content-5-box1">
+  		<span>热门活动  <em>POPULAR ACTIVITIES</em></span>
+  	</div>
+  	<div class="content-5-box2 clearfix">
+  		<div class="content-5-box2-left">
+  			<span class="content_pro" style="text-align: center;">ACTIVITIES</span>
+  		   <div class="content-5_pro">
+  		   	<span class="pro_span1"></span>
+  		   	<h3>07</h3>
+  		   	<span class="pro_span2"></span>
+  		   	<span class="pro_span3">POPULAR INFORMATON</span>
+  		   </div>
+  		</div><div class="content-5-box2-right" id="wufen-1">
+  		      <div style="width:100%;height:16rem;padding-top:2rem;overflow: hidden;position: relative;">
+  			<ul>
+  				<li class="clearfix"><a>1.www.google.com 的响应时间过长</a><span>2017/6/8</span></li>
+  				<li class="clearfix"><a>2.www.google.com 的响应时间过长</a><span>2017/6/8</span></li>
+  				<li class="clearfix"><a>1.www.google.com 的响应时间过长</a><span>2017/6/8</span></li>
+  				<li class="clearfix"><a>2.www.google.com 的响应时间过长</a><span>2017/6/8</span></li>
+  				<li class="clearfix"><a>1.www.google.com 的响应时间过长</a><span>2017/6/8</span></li>
+  				<li class="clearfix"><a>2.www.google.com 的响应时间过长</a><span>2017/6/8</span></li>
+  				<li class="clearfix"><a>2.www.google.com 的响应时间过长</a><span>2017/6/8</span></li>
+  				<li class="clearfix"><a>2.www.google.com 的响应时间过长</a><span>2017/6/8</span></li>
+  				<li class="clearfix"><a>2.www.google.com 的响应时间过长</a><span>2017/6/8</span></li>
+  				<li class="clearfix"><a>2.www.google.com 的响应时间过长</a><span>2017/6/8</span></li>
+  				<li class="clearfix"><a>2.www.google.com 的响应时间过长</a><span>2017/6/8</span></li>
+  			</ul>
+  			</div>
+  		</div>
+  	</div>
+  </div>
+</section>
+
+<!--footer-->
+<footer>
+	<div class="fooeter-box-top clearfix">
+		<div class="footer-box-left">
+			 <ul>
+                <li class="title">关于我们</li>
+                <li><a href="#">公司介绍</a></li>
+                <li><a href="#">业务模式</a></li>
+                <li><a href="#">合作机构</a></li>
+                <li><a href="#">服务协议</a></li>
+            
+            </ul><ul>
+                <li class="title">关于我们</li>
+                <li><a href="#">公司介绍</a></li>
+                <li><a href="#">业务模式</a></li>
+                <li><a href="#">合作机构</a></li>
+                <li><a href="#">服务协议</a></li>
+            
+            </ul><ul>
+                <li class="title">关于我们</li>
+                <li><a href="#">公司介绍</a></li>
+                <li><a href="#">业务模式</a></li>
+                <li><a href="#">合作机构</a></li>
+                <li><a href="#">服务协议</a></li>
+            </ul>
+            <ul>
+                <li class="title">关于我们</li>
+                <li><a href="#">公司介绍</a></li>
+                <li><a href="#">业务模式</a></li>
+                <li><a href="#">合作机构</a></li>
+                <li><a href="#">服务协议</a></li>
+           
+             </ul><ul>
+                <li class="title">关于我们</li>
+                <li><a href="#">公司介绍</a></li>
+                <li><a href="#">业务模式</a></li>
+                <li><a href="#">合作机构</a></li>
+                <li><a href="#">服务协议</a></li>
+            </ul>
+				
+		</div><ul class="footer-box-right">
+			<li><a>联系我们</a></li>
+			<li><a>电话：0798-234564</a></li>
+			<li><a>邮箱：jiaoweubiao@12456.com</a></li>
+			<li><a>手机：18061499540</a></li>
+			<li><a>深圳市龙岗区....</a></li>
+			
+		</ul>
+	</div>
+	<div class="fooeter-box-bottom">		
+		
+		<p>深圳X互联网金融公司 版权所有 @ 2017-208 </p>
+	</div>
+</footer>
+<lscript src="js/vendor/jquery%20-%20副本.js"></script>
+
+</body>
+</html>
